@@ -13,7 +13,7 @@ function HomePage({ start }: HomePageProps) {
   return (
     <div className="wrapper">
       <p>
-        <code>We have some dead russians:</code> {counter}.
+        <code>Counter:</code> {counter}.
       </p>
       <div className="btnWrapper">
         <button className="btn" onClick={handleDecrementCounter}>
