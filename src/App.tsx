@@ -4,8 +4,10 @@ import { Stack, Queue, HashTable } from 'components/examples';
 
 import { HomePage } from './features';
 function App() {
+  const startNumber = 12;
+
   // for Error Boundary
-  const exampleError = new Error();
+  //const exampleError = new Error();
 
   // for Stack
   const stringStack = new Stack<string>();
@@ -13,13 +15,16 @@ function App() {
   stringStack.push('Two');
   console.log('Stack:', stringStack.peek());
   console.log('Stack:', stringStack.pop());
+  console.log('Stack:', stringStack.isEmpty());
 
   // for Queue
   const numberQueue = new Queue<number>();
   numberQueue.enqueue(1);
   numberQueue.enqueue(2);
+  numberQueue.dequeue();
   console.log('Queue:', numberQueue.front());
   console.log('Queue:', numberQueue.size());
+  console.log('Queue:', numberQueue.isEmpty());
 
   //for Hash Table
   const myHashTable = new HashTable<number>();
@@ -34,7 +39,7 @@ function App() {
 
   return (
     <div className="appWrapper">
-      <HomePage start={0} />
+      <HomePage start={startNumber} />
     </div>
   );
 }

@@ -63,11 +63,11 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint --ext .ts, .tsx --max-warnings 0",
+      "eslint --max-warnings 0",
       "bash -c tsc"
     ],
     "*.{js,jsx}": [
-      "eslint --ext .js, .jsx --max-warnings 0 --fix"
+      "eslint --max-warnings 0 --fix"
     ],
     "*.{css,json,md,mdx}": [
       "prettier --write"

@@ -13,6 +13,8 @@ export default class Queue<T> {
     if (this.items.length === 0) {
       return 'queue is empty';
     }
+
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     return this.items.shift()!;
   }
 
