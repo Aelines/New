@@ -22,8 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier '**/*.{css,json,js,ts,tsx,md,mdx}'",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0 --fix",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --max-warnings 0 --fix",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
